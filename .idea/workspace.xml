@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03c0c664-d63f-40c0-952b-7c1d2ce641e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aiDnUSFNOZAjCZx9MvJDT1GXy3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03c0c664-d63f-40c0-952b-7c1d2ce641e2" name="Default Changelist" comment="" />
+      <created>1587209687670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587209687670</updated>
+      <workItem from="1587209693332" duration="1740000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="336" y="189" width="752" height="445" key="git4idea.merge.GitPullDialog" timestamp="1587211310653">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="336" y="189" width="752" height="445" key="git4idea.merge.GitPullDialog/45.27.1321.741@45.27.1321.741" timestamp="1587211310653" />
+    <state x="510" y="309" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1587210897982">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="510" y="309" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/45.27.1321.741@45.27.1321.741" timestamp="1587210897982" />
+  </component>
+</project>
