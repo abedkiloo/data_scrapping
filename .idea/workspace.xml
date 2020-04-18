@@ -50,7 +50,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587209687670</updated>
-      <workItem from="1587209693332" duration="5019000" />
+      <workItem from="1587209693332" duration="8117000" />
+      <workItem from="1587239079862" duration="1741000" />
     </task>
     <servers />
   </component>
@@ -58,6 +59,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="466" y="155" key="FileChooserDialogImpl" timestamp="1587239973043">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="466" y="155" key="FileChooserDialogImpl/45.27.1321.741@45.27.1321.741" timestamp="1587239973043" />
     <state x="336" y="189" width="752" height="445" key="git4idea.merge.GitPullDialog" timestamp="1587211310653">
       <screen x="45" y="27" width="1321" height="741" />
     </state>
