@@ -1,7 +1,9 @@
 # import requests module
+import datetime
+
+import pandas as pd
 import requests
 from requests_html import HTML
-import pandas as pd
 
 
 def url_to_txt(url, file_name="files/world.txt"):
@@ -14,7 +16,7 @@ def url_to_txt(url, file_name="files/world.txt"):
     return ""
 
 
-def convert_to_list_of_list(data_object):
+def convert_to_list_of_list(data_object, year):
     # get the html data
     html_data = HTML(html=data_object)
 
@@ -47,7 +49,7 @@ def convert_to_list_of_list(data_object):
             table_data.append(row_data)
     print(header_name)
     print(table_data[0])
-    put_data_to_csv(table_data, header_name, file_name="movies.csv")
+    put_data_to_csv(table_data, header_name, file_name=f"movies_{year}.csv")
 
 
 def put_data_to_csv(data, headers, file_name=None):
@@ -55,6 +57,16 @@ def put_data_to_csv(data, headers, file_name=None):
     df.to_csv(f'files/{file_name}', index=False)
 
 
-url = "https://www.boxofficemojo.com/year/world"
-html_text = url_to_txt(url)
-convert_to_list_of_list(html_text)
+def execute(start_year=None, years_ago=10):
+    if start_year is None:
+        now = datetime.datetime.now()
+        start_year = now.year
+    assert isinstance(start_year, int)
+    assert len(f"{start_year}") == 4
+    url = f"https://www.boxofficemojo.com/year/world/{start_year}"
+    html_text = url_to_txt(url)
+    convert_to_list_of_list(html_text, start_year)
+
+
+if __name__ == "__main__":
+    execute()
