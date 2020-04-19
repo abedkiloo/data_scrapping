@@ -14,7 +14,7 @@ def url_to_txt(url, file_name="files/world.txt"):
         with open(file_name, 'w') as f:
             f.write(r.text)
         return html_text
-    return ""
+    return None
 
 
 def convert_to_list_of_list(data_object, year):
@@ -66,6 +66,8 @@ def execute(start_scrap_year=None, years_ago=5):
     for i in range(0, years_ago + 1):
         url = f"https://www.boxofficemojo.com/year/world/{start_scrap_year}"
         html_text = url_to_txt(url)
+        if html_text is None:
+            return
         convert_to_list_of_list(html_text, start_scrap_year)
         print(f"completed year {start_scrap_year}")
         start_scrap_year -= 1
@@ -73,6 +75,7 @@ def execute(start_scrap_year=None, years_ago=5):
 
 
 if __name__ == "__main__":
+    # accept argument when executing script
     start_year, number_of_years = sys.argv[1], sys.argv[2]
     # convert the start and number of years to int
     try:
