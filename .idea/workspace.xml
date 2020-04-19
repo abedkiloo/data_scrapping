@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03c0c664-d63f-40c0-952b-7c1d2ce641e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies_api/get_movies_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587209687670</updated>
       <workItem from="1587209693332" duration="8117000" />
-      <workItem from="1587239079862" duration="6236000" />
+      <workItem from="1587239079862" duration="10939000" />
     </task>
     <servers />
   </component>
@@ -71,5 +72,9 @@
       <screen x="45" y="27" width="1321" height="741" />
     </state>
     <state x="510" y="309" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/45.27.1321.741@45.27.1321.741" timestamp="1587210897982" />
+    <state x="368" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587313916136">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="368" y="89" width="672" height="678" key="search.everywhere.popup/45.27.1321.741@45.27.1321.741" timestamp="1587313916136" />
   </component>
 </project>
