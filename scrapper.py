@@ -47,8 +47,6 @@ def convert_to_list_of_list(data_object, year):
                 # print(i, col.text, "\n\n")
                 row_data.append(col.text)
             table_data.append(row_data)
-    print(header_name)
-    print(table_data[0])
     put_data_to_csv(table_data, header_name, file_name=f"movies_{year}.csv")
 
 
@@ -57,15 +55,19 @@ def put_data_to_csv(data, headers, file_name=None):
     df.to_csv(f'files/{file_name}', index=False)
 
 
-def execute(start_year=None, years_ago=10):
+def execute(start_year=None, years_ago=5):
     if start_year is None:
         now = datetime.datetime.now()
         start_year = now.year
     assert isinstance(start_year, int)
+    assert isinstance(years_ago, int)
     assert len(f"{start_year}") == 4
-    url = f"https://www.boxofficemojo.com/year/world/{start_year}"
-    html_text = url_to_txt(url)
-    convert_to_list_of_list(html_text, start_year)
+    for i in range(0, years_ago + 1):
+        url = f"https://www.boxofficemojo.com/year/world/{start_year}"
+        html_text = url_to_txt(url)
+        convert_to_list_of_list(html_text, start_year)
+        print(f"completed year {start_year}")
+        start_year -= 1
 
 
 if __name__ == "__main__":
