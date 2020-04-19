@@ -1,5 +1,6 @@
 # import requests module
 import datetime
+import sys
 
 import pandas as pd
 import requests
@@ -55,20 +56,31 @@ def put_data_to_csv(data, headers, file_name=None):
     df.to_csv(f'files/{file_name}', index=False)
 
 
-def execute(start_year=None, years_ago=5):
-    if start_year is None:
+def execute(start_scrap_year=None, years_ago=5):
+    if start_scrap_year is None:
         now = datetime.datetime.now()
-        start_year = now.year
-    assert isinstance(start_year, int)
+        start_scrap_year = now.year
+    assert isinstance(start_scrap_year, int)
     assert isinstance(years_ago, int)
-    assert len(f"{start_year}") == 4
+    assert len(f"{start_scrap_year}") == 4
     for i in range(0, years_ago + 1):
-        url = f"https://www.boxofficemojo.com/year/world/{start_year}"
+        url = f"https://www.boxofficemojo.com/year/world/{start_scrap_year}"
         html_text = url_to_txt(url)
-        convert_to_list_of_list(html_text, start_year)
-        print(f"completed year {start_year}")
-        start_year -= 1
+        convert_to_list_of_list(html_text, start_scrap_year)
+        print(f"completed year {start_scrap_year}")
+        start_scrap_year -= 1
+    print('Hooray!! Data scrapping completed')
 
 
 if __name__ == "__main__":
-    execute()
+    start_year, number_of_years = sys.argv[1], sys.argv[2]
+    # convert the start and number of years to int
+    try:
+        start_year = int(start_year)
+    except:
+        start_year = None
+    try:
+        number_of_years = int(number_of_years)
+    except:
+        number_of_years = 1
+    execute(start_scrap_year=start_year, years_ago=number_of_years)
